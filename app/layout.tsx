@@ -1,20 +1,18 @@
-import type { Metadata } from 'next'
-import './globals.css'
-
+import "./globals.css";
 
 export const metadata = {
-  title: 'Chaticon',
-  description: 'Chat Applicarion with Next.js, TailwindCSS, and Socket.io',
-}
+  title: "Chaticon",
+  description: "Chat Application with Next.js, TailwindCSS, and Socket.io",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body data-theme="light">{children}</body>
     </html>
-  )
+  );
 }
