@@ -9,6 +9,8 @@
 }
 
 :root {
-  --backgroundColor: #ff8f8f;
-  --textColor: "blue";
+  --backgroundColor: #f0f8ff;
+  --sectionColor: #fff;
+  --seperatorColor: #747474;
+  --textColor: "black";
 }

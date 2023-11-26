@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         backgroundColor: "var(--backgroundColor)",
         textColor: "var(--textColor)",
+        sectionColor: "var(--sectionColor)",
+        seperatorColor: "var(--seperatorColor)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
