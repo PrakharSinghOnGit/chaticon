@@ -1,14 +1,15 @@
 import { Themes } from "./theme.expoter";
-import { Theme, ThemeName } from "./theme.type";
+import { ThemeName } from "./theme.type";
 
-export function getTheme(): Theme {
-  const theme = localStorage.getItem("theme") as ThemeName | null;
-  if (theme && theme in Themes) {
-    return Themes[theme];
-  }
-  return Themes.light;
-}
-
-export function setTheme(theme: string) {
+export function setTheme(theme: ThemeName) {
   localStorage.setItem("theme", theme);
+  console.log("set theme", Themes[theme]);
+  document.documentElement.style.setProperty(
+    "--backgroundColor",
+    Themes[theme].backgroundColor
+  );
+  document.documentElement.style.setProperty(
+    "--textColor",
+    Themes[theme].textColor
+  );
 }
