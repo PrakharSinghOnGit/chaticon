@@ -16,7 +16,8 @@ const Page = () => {
           }
           name={"Shaan Singh"}
           msg={"Hello"}
-          time={"2 Min Ago"}
+          time={"few Seconds ago"}
+          unread={true}
         />
       </div>
       <div className="bg-sectionColor min-w-min flex p-3 flex-col items-center gap-3 flex-grow self-stretch rounded-xl"></div>
