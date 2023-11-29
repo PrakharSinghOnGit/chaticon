@@ -17,7 +17,7 @@
   --highlightTextColor: white;
 }
 
-.collapserCon:hover .collapser {
+.resizerCon:hover .resizer {
   background-color: var(--highlightGreen);
   height: 100px;
 }
