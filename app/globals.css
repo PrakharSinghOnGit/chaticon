@@ -10,8 +10,14 @@
 
 :root {
   --backgroundColor: rgb(255, 255, 255);
-  --sectionColor: rgb(221, 235, 255);
+  --sectionColor: rgb(168, 204, 255);
   --seperatorColor: #747474;
   --textColor: "black";
   --highlightGreen: teal;
+  --highlightTextColor: white;
+}
+
+.collapserCon:hover .collapser {
+  background-color: var(--highlightGreen);
+  height: 100px;
 }

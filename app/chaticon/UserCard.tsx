@@ -29,9 +29,9 @@ const UserCard: React.FC<UserCardProps> = ({
         src={img}
         alt={name}
       />
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow overflow-hidden">
         <span className="font-semibold text-sm">{name}</span>
-        <p className="text-xs overflow-hidden whitespace-nowrap text-overflow-ellipsis w-full">
+        <p className="text-xs overflow-hidden whitespace-nowrap text-overflow-ellipsis w-auto">
           {msg}
         </p>
         <p
@@ -43,10 +43,14 @@ const UserCard: React.FC<UserCardProps> = ({
         <div
           style={{
             display: unread > 0 ? "block" : "none",
+            boxShadow: "0 0 0 4px var(--backgroundColor)",
           }}
           className="min-w-max px-1 h-fit absolute rounded-full bg-highlightGreen m-1 right-1 bottom-0 text-center"
         >
-          <p style={{ fontSize: 10 }} className="text-white font-semibold">
+          <p
+            style={{ fontSize: 10 }}
+            className="text-highlightTextColor font-semibold"
+          >
             {unread}
           </p>
         </div>
