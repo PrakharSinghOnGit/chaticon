@@ -15,12 +15,14 @@ const Page = () => {
             "https://lh3.googleusercontent.com/a/ACg8ocJy2t4C7jxhf1Q1-vB9_ykVZXPIwNjZiOeHR3kH7jthWJvr=s576-c-no"
           }
           name={"Shaan Singh"}
-          msg={"Hello"}
-          time={"few Seconds ago"}
-          unread={true}
+          msg={
+            "Hello thsi is a  lorem ipsum message thsi is a  lorem ipsum message liash fasldf ladhsfljhas dlfh lasd hfl asdlf "
+          }
+          time={"Yesterday"}
+          unread={10}
         />
       </div>
-      <div className="bg-sectionColor min-w-min flex p-3 flex-col items-center gap-3 flex-grow self-stretch rounded-xl"></div>
+      <div className="bg-sectionColor min-w-min flex p-3 flex-col items-center gap-3 flex-grow self-stretch rounded-xl "></div>
     </main>
   );
 };

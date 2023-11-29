@@ -13,6 +13,7 @@ const config: Config = {
         textColor: "var(--textColor)",
         sectionColor: "var(--sectionColor)",
         seperatorColor: "var(--seperatorColor)",
+        highlightGreen: "var(--highlightGreen)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
